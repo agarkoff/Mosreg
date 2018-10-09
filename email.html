@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Закупки</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">№ закупки</th>
+        <th scope="col">Заказчик</th>
+        <th scope="col">Адрес местонахождения заказчика</th>
+        <th scope="col">Наименование закупки</th>
+        <th scope="col">НМЦК, руб (стоимость)</th>
+        <th scope="col">Документы закупки</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for purchase in purchases %}
+    <tr>
+        <th scope="row">{{ value.id }}</th>
+        <td>{{ purchase.customerName }}</td>
+        <td>{{ purchase.address }}</td>
+        <td>{{ purchase.purchaseName }}</td>
+        <td>{{ purchase.cost }}</td>
+        <td>{{ purchase.docs }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>

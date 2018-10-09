@@ -1,0 +1,20 @@
+{
+  "name": "misterparser/mosreg",
+  "description": "Mosreg Parser",
+  "type": "project",
+  "require": {
+    "twig/twig": "^2.5",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "phpquery/phpquery": "^0.0.1"
+  },
+  "autoload": {
+    "psr-4": { "app\\": "" }
+  },
+  "authors": [
+    {
+      "name": "MisterParser",
+      "email": "stas.agarkov@gmail.com"
+    }
+  ]
+}
